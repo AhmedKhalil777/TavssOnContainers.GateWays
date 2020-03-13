@@ -1,0 +1,63 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/{Action}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/Hub/{Action}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/{Action}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9000
+        }
+      ],
+      "UpstreamPathTemplate": "/Courses/{Action}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/{Action}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10000
+        }
+      ],
+      "UpstreamPathTemplate": "/Communities/{Action}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/{Action}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 11000
+        }
+      ],
+      "UpstreamPathTemplate": "/Projects/{Action}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/{Action}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 12000
+        }
+      ],
+      "UpstreamPathTemplate": "/Idintity/{Action}"
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:7000"
+  }
+}
